@@ -1,0 +1,10 @@
+<div>
+    <p [style.background-color]='color'>partial works!</p>
+</div>
+
+
+
+<label>Add an Color:</label>
+<div>
+    <input #newColor (change)="addNewColor(newColor.value)" id="main-color" type="color" class="change-button">
+</div>
