@@ -10,6 +10,8 @@ import { ColorsComponent } from './colors/colors.component';
 import { PartialComponent } from './colors/partial/partial.component';
 import { RouterModule } from '@angular/router';
 import { BindingComponent } from './binding/binding.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { BindingComponent } from './binding/binding.component';
     ColorsComponent,
     PartialComponent,
     BindingComponent,
+    ParentComponent,
+    ChildComponent,
   
   ],
   imports: [

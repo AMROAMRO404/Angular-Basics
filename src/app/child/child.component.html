@@ -1,0 +1,8 @@
+<p>child works!</p>
+<label>Add an Item:</label>
+<br>
+<textarea [(ngModel)]='textAreaValue' #newItem></textarea>
+<br>
+<button (click)='addNewItem(newItem.value)' class="btn btn-primary">Add</button>
+
+<p>the new item is : {{textAreaValue}}</p>

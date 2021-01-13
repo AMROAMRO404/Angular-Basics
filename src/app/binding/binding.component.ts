@@ -3,18 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-binding',
   templateUrl: './binding.component.html',
-  styleUrls: ['./binding.component.css']
+  styleUrls: ['./binding.component.css'],
 })
 export class BindingComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  textAreaValue = '';
+  resetTextArea(): void {
+    this.textAreaValue = '';
   }
-  textAreaValue =""
-  resetTextArea():void{
-    this.textAreaValue=""
-    
-  }
-
 }

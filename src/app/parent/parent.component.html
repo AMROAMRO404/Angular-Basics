@@ -1,0 +1,6 @@
+<p>parent works!</p>
+
+<app-child [item]='item' (newItemEvent)="addToItems($event)"></app-child>
+<div *ngFor='let i of items'>
+    <p>{{i}}</p>
+</div>
