@@ -9,6 +9,8 @@ import { ARowComponent } from './a-row/a-row.component';
 import { ColorsComponent } from './colors/colors.component';
 import { PartialComponent } from './colors/partial/partial.component';
 import { RouterModule } from '@angular/router';
+import { BindingComponent } from './binding/binding.component';
+
 
 @NgModule({
   declarations: [
@@ -16,15 +18,15 @@ import { RouterModule } from '@angular/router';
     ETableComponent,
     ARowComponent,
     ColorsComponent,
-    PartialComponent
+    PartialComponent,
+    BindingComponent,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot([
-      { path: 'colors/:color', component: ColorsComponent },
-    ])
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

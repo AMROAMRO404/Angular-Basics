@@ -1,0 +1,10 @@
+<p>binding works!</p>
+
+
+<div class="mb-3">
+    <label for="textArea" class="form-label">This is Binding example</label>
+    <textarea [(ngModel)]='textAreaValue' class="form-control" id="textArea"></textarea>
+    <div id="emailHelp" class="form-text">{{textAreaValue}}</div>
+</div>
+
+<button [disabled]="textAreaValue==''" (click)='resetTextArea()' class="btn btn-primary">Reset</button>

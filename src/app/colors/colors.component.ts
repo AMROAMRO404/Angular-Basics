@@ -10,7 +10,7 @@ export class ColorsComponent implements OnInit {
 
   constructor(public rout:ActivatedRoute) { }
   color:any
-
+  
   ngOnInit(): void {
     this.rout.paramMap.subscribe( paramMap => {
       this.color = paramMap.get('color');
