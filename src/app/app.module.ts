@@ -12,7 +12,9 @@ import { RouterModule } from '@angular/router';
 import { BindingComponent } from './binding/binding.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
-
+import { LoginPageComponent } from './login-page/login-page.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,15 +26,17 @@ import { ChildComponent } from './child/child.component';
     BindingComponent,
     ParentComponent,
     ChildComponent,
-  
+    LoginPageComponent,
+    ProfilePageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
