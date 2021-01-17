@@ -12,9 +12,9 @@ import { RouterModule } from '@angular/router';
 import { BindingComponent } from './binding/binding.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
-import { LoginPageComponent } from './login-page/login-page.component';
-import { ProfilePageComponent } from './profile-page/profile-page.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +26,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BindingComponent,
     ParentComponent,
     ChildComponent,
-    LoginPageComponent,
-    ProfilePageComponent,
+    DirectivesComponent,
   ],
   imports: [
     BrowserModule,
