@@ -15,6 +15,7 @@ import { ChildComponent } from './child/child.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DirectivesComponent } from './directives/directives.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { DirectivesComponent } from './directives/directives.component';
     ParentComponent,
     ChildComponent,
     DirectivesComponent,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,

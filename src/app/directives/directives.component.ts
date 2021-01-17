@@ -13,6 +13,7 @@ export class DirectivesComponent implements OnInit {
   isToggle: boolean = false;
   counter = 0;
   buttonText = 'Toggle';
+  color: any;
   toggle() {
     if (this.isToggle) {
       this.buttonText = 'Toggle';

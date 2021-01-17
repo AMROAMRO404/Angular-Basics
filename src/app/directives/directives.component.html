@@ -1,8 +1,10 @@
 <div style="padding: 100px;text-align: center;">
     <h2>Toggle excersice</h2>
     <button (click)='toggle()' class="btn btn-primary">{{buttonText}}</button>
-    <h3 style="padding: 20px;" *ngIf='isToggle'>Show details .. </h3>
-    <div *ngFor='let item of items;let i = index'>
+    <div style="padding: 20px;">
+        <h3 appHighlight [appHighlight]='color' (mouseenter)='color="red"' *ngIf='isToggle'>Show details .. </h3>
+    </div>
+    <div style="padding: 20px;" *ngFor='let item of items;let i = index'>
         <h3 [ngClass]="{'first':i>5}">{{item}}</h3>
     </div>
 </div>
