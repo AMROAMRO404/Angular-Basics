@@ -16,6 +16,8 @@ import { ChildComponent } from './child/child.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DirectivesComponent } from './directives/directives.component';
 import { HighlightDirective } from './highlight.directive';
+import { LoadMimicBehaviorComponent } from './load-mimic-behavior/load-mimic-behavior.component';
+import { ScrollDirective } from './scroll.directive';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { HighlightDirective } from './highlight.directive';
     ChildComponent,
     DirectivesComponent,
     HighlightDirective,
+    LoadMimicBehaviorComponent,
+    ScrollDirective,
   ],
   imports: [
     BrowserModule,
