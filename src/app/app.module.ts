@@ -18,6 +18,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { HighlightDirective } from './highlight.directive';
 import { LoadMimicBehaviorComponent } from './load-mimic-behavior/load-mimic-behavior.component';
 import { ScrollDirective } from './scroll.directive';
+import { TestServiceComponent } from './test-service/test-service.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { ScrollDirective } from './scroll.directive';
     HighlightDirective,
     LoadMimicBehaviorComponent,
     ScrollDirective,
+    TestServiceComponent,
   ],
   imports: [
     BrowserModule,

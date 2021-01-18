@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ScrollDirective } from '../scroll.directive';
+import { TestService } from '../test.service';
 
 @Component({
   selector: 'app-load-mimic-behavior',
@@ -7,7 +8,9 @@ import { ScrollDirective } from '../scroll.directive';
   styleUrls: ['./load-mimic-behavior.component.css'],
 })
 export class LoadMimicBehaviorComponent implements OnInit {
-  constructor() {}
+  constructor(private myService: TestService) {}
 
   ngOnInit(): void {}
+
+  arrayToShow = this.myService.sheardItems;
 }
