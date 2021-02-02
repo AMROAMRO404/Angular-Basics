@@ -21,7 +21,6 @@ export class ScrollDirective {
       const text = this.renderer.createText(
         'reached at the end of the table ...'
       );
-
       this.renderer.appendChild(div, text);
       this.renderer.appendChild(this.elemRef.nativeElement, div);
     }

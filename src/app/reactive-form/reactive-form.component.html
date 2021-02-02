@@ -1,0 +1,54 @@
+<div style="text-align: center;padding: 30px;">
+    <h1>Reactive Form</h1>
+    <form [formGroup]="profileForm" id="myform" class="container">
+        <label for="input-first-name">First Name</label>
+        <input formControlName="fName" type="text" class="form-control" id="input-first-name" placeholder="Ex: Amro">
+        <div *ngIf="profileForm.controls.fName.invalid && profileForm.controls.fName.touched">
+            <small *ngIf="profileForm.controls.fName.errors?.required" class="text-danger">First name is required</small>
+            <small *ngIf="profileForm.controls.fName.errors?.minlength" class="text-danger">First name must be at least 3 characters</small>
+        </div>
+        <label for="input-email">First Name</label>
+        <input formControlName="email" type="email" class="form-control" id="input-email" placeholder="Ex: Amro@gmail.com">
+        <div *ngIf="profileForm.controls.email.invalid && profileForm.controls.email.touched">
+            <small *ngIf="profileForm.controls.email.errors?.required" class="text-danger">email is required</small>
+            <small *ngIf="profileForm.controls.email.errors?.minlength" class="text-danger">email must be at least 3 characters</small>
+        </div>
+        <div style="padding: 20px;">
+            <label for="">Gender</label>
+            <div class="form-check">
+                <input formControlName='gender' class="form-check-input" type="radio" id="exampleRadios1" value="male" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Male
+                </label>
+            </div>
+            <div class="form-check">
+                <input formControlName='gender' class="form-check-input" type="radio" id="exampleRadios2" value="female">
+                <label class="form-check-label" for="exampleRadios2">
+                  Female
+                </label>
+            </div>
+        </div>
+        <div style="padding-top: 20px;">
+            <label for="input-mobile">Mobile number</label>
+            <input formControlName="mobileNumber" type="email" class="form-control" id="input-mobileNumber" placeholder="Ex: 05453424">
+            <div *ngIf="profileForm.controls.mobileNumber.invalid && profileForm.controls.mobileNumber.touched">
+                <small *ngIf="profileForm.controls.mobileNumber.errors?.required" class="text-danger">mobileNumber is required</small>
+                <small *ngIf="profileForm.controls.mobileNumber.errors?.minlength" class="text-danger">mobileNumber must be at least 3 characters</small>
+            </div>
+        </div>
+        <div style="padding-top: 20px;">
+            <input (change)="readUrl($event)" class="form-control" formControlName="photo" type="file" id="myFile">
+            <div *ngIf="profileForm.controls.photo.invalid && profileForm.controls.photo.touched">
+                <small *ngIf="profileForm.controls.photo.errors?.required" class="text-danger">photo is required</small>
+            </div>
+            <div style="padding-top: 130px;">
+                <img style="width: 100px;height: 100px;" [src]="imageURL">
+            </div>
+        </div>
+        <button (click)="submit()" routerLink="/data-form" class="btn btn-success">submit</button>
+
+    </form>
+    <div style="padding-top: 30px;">
+        {{profileForm.value|json}}
+    </div>
+</div>

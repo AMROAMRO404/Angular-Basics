@@ -19,6 +19,9 @@ import { HighlightDirective } from './highlight.directive';
 import { LoadMimicBehaviorComponent } from './load-mimic-behavior/load-mimic-behavior.component';
 import { ScrollDirective } from './scroll.directive';
 import { TestServiceComponent } from './test-service/test-service.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { FormInputComponent } from './form-input/form-input.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,8 @@ import { TestServiceComponent } from './test-service/test-service.component';
     LoadMimicBehaviorComponent,
     ScrollDirective,
     TestServiceComponent,
+    ReactiveFormComponent,
+    FormInputComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +47,7 @@ import { TestServiceComponent } from './test-service/test-service.component';
     FormsModule,
     RouterModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
